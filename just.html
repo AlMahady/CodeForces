@@ -1,0 +1,122 @@
+<svg width="1000" height="800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Tournament Class -->
+  <g>
+    <rect x="50" y="50" width="200" height="120" fill="#e8f4f8" stroke="#2c5282" stroke-width="2"/>
+    <text x="150" y="70" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">Tournament</text>
+    <line x1="50" y1="75" x2="250" y2="75" stroke="#2c5282" stroke-width="1"/>
+    <text x="55" y="90" font-family="Arial" font-size="10">- tournamentName: String</text>
+    <text x="55" y="105" font-family="Arial" font-size="10">- tournamentFormat: String</text>
+    <text x="55" y="120" font-family="Arial" font-size="10">- startDate: Date</text>
+    <text x="55" y="135" font-family="Arial" font-size="10">- endDate: Date</text>
+    <text x="55" y="150" font-family="Arial" font-size="10">- location: String</text>
+  </g>
+
+  <!-- Auction Class -->
+  <g>
+    <rect x="350" y="50" width="200" height="80" fill="#f0f8f0" stroke="#2c5282" stroke-width="2"/>
+    <text x="450" y="70" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">Auction</text>
+    <line x1="350" y1="75" x2="550" y2="75" stroke="#2c5282" stroke-width="1"/>
+    <text x="355" y="90" font-family="Arial" font-size="10">+ conductAuction(): void</text>
+    <text x="355" y="105" font-family="Arial" font-size="10">+ assignPlayers(): void</text>
+  </g>
+
+  <!-- Franchise Class -->
+  <g>
+    <rect x="250" y="200" width="180" height="140" fill="#fff8e1" stroke="#2c5282" stroke-width="2"/>
+    <text x="340" y="220" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">Franchise</text>
+    <line x1="250" y1="225" x2="430" y2="225" stroke="#2c5282" stroke-width="1"/>
+    <text x="255" y="240" font-family="Arial" font-size="10">- teamName: String</text>
+    <text x="255" y="255" font-family="Arial" font-size="10">- ownerName: String</text>
+    <text x="255" y="270" font-family="Arial" font-size="10">- sponsor: String</text>
+    <text x="255" y="285" font-family="Arial" font-size="10">- entryFee: double</text>
+    <text x="255" y="300" font-family="Arial" font-size="10">- franchiseDetails: String</text>
+    <line x1="250" y1="310" x2="430" y2="310" stroke="#2c5282" stroke-width="1"/>
+    <text x="255" y="325" font-family="Arial" font-size="10">+ registerTeam(): void</text>
+  </g>
+
+  <!-- Player Class -->
+  <g>
+    <rect x="480" y="200" width="180" height="140" fill="#fce4ec" stroke="#2c5282" stroke-width="2"/>
+    <text x="570" y="220" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">Player</text>
+    <line x1="480" y1="225" x2="660" y2="225" stroke="#2c5282" stroke-width="1"/>
+    <text x="485" y="240" font-family="Arial" font-size="10">- playerNo: int</text>
+    <text x="485" y="255" font-family="Arial" font-size="10">- playerName: String</text>
+    <text x="485" y="270" font-family="Arial" font-size="10">- playerRole: String</text>
+    <text x="485" y="285" font-family="Arial" font-size="10">- playerRating: double</text>
+    <text x="485" y="300" font-family="Arial" font-size="10">- basePrice: double</text>
+    <text x="485" y="315" font-family="Arial" font-size="10">- state: String</text>
+    <line x1="480" y1="320" x2="660" y2="320" stroke="#2c5282" stroke-width="1"/>
+    <text x="485" y="335" font-family="Arial" font-size="10">+ updateStats(): void</text>
+  </g>
+
+  <!-- Fixture Class -->
+  <g>
+    <rect x="750" y="50" width="180" height="130" fill="#f3e5f5" stroke="#2c5282" stroke-width="2"/>
+    <text x="840" y="70" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">Fixture</text>
+    <line x1="750" y1="75" x2="930" y2="75" stroke="#2c5282" stroke-width="1"/>
+    <text x="755" y="90" font-family="Arial" font-size="10">- date: Date</text>
+    <text x="755" y="105" font-family="Arial" font-size="10">- time: Time</text>
+    <text x="755" y="120" font-family="Arial" font-size="10">- teamA: String</text>
+    <text x="755" y="135" font-family="Arial" font-size="10">- teamB: String</text>
+    <text x="755" y="150" font-family="Arial" font-size="10">- venue: String</text>
+    <line x1="750" y1="155" x2="930" y2="155" stroke="#2c5282" stroke-width="1"/>
+    <text x="755" y="170" font-family="Arial" font-size="10">+ scheduleMatch(): void</text>
+  </g>
+
+  <!-- Match Result Class -->
+  <g>
+    <rect x="750" y="250" width="200" height="150" fill="#e1f5fe" stroke="#2c5282" stroke-width="2"/>
+    <text x="850" y="270" text-anchor="middle" font-family="Arial" font-size="14" font-weight="bold">MatchResult</text>
+    <line x1="750" y1="275" x2="950" y2="275" stroke="#2c5282" stroke-width="1"/>
+    <text x="755" y="290" font-family="Arial" font-size="10">- scoreDetails: String</text>
+    <text x="755" y="305" font-family="Arial" font-size="10">- winningTeam: String</text>
+    <text x="755" y="320" font-family="Arial" font-size="10">- losingTeam: String</text>
+    <text x="755" y="335" font-family="Arial" font-size="10">- manOfTheMatch: String</text>
+    <text x="755" y="350" font-family="Arial" font-size="10">- pointCount: int</text>
+    <line x1="750" y1="355" x2="950" y2="355" stroke="#2c5282" stroke-width="1"/>
+    <text x="755" y="370" font-family="Arial" font-size="10">+ recordResult(): void</text>
+    <text x="755" y="385" font-family="Arial" font-size="10">+ updatePoints(): void</text>
+  </g>
+
+  <!-- Relationships -->
+  
+  <!-- Tournament to Auction (1 to 1) -->
+  <line x1="250" y1="90" x2="350" y2="90" stroke="#2c5282" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="300" y="85" font-family="Arial" font-size="10">1</text>
+  <text x="330" y="85" font-family="Arial" font-size="10">1</text>
+  
+  <!-- Auction to Franchise (1 to many) -->
+  <line x1="450" y1="130" x2="340" y2="200" stroke="#2c5282" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="430" y="140" font-family="Arial" font-size="10">1</text>
+  <text x="350" y="190" font-family="Arial" font-size="10">*</text>
+  
+  <!-- Auction to Player (1 to many) -->
+  <line x1="450" y1="130" x2="570" y2="200" stroke="#2c5282" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="470" y="140" font-family="Arial" font-size="10">1</text>
+  <text x="580" y="190" font-family="Arial" font-size="10">*</text>
+  
+  <!-- Tournament to Fixture (1 to many) -->
+  <line x1="250" y1="110" x2="750" y2="110" stroke="#2c5282" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="280" y="105" font-family="Arial" font-size="10">1</text>
+  <text x="730" y="105" font-family="Arial" font-size="10">*</text>
+  
+  <!-- Fixture to Match Result (1 to 1) -->
+  <line x1="840" y1="180" x2="840" y2="250" stroke="#2c5282" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="845" y="200" font-family="Arial" font-size="10">1</text>
+  <text x="845" y="240" font-family="Arial" font-size="10">1</text>
+  
+  <!-- Franchise to Player (many to many) -->
+  <line x1="430" y1="270" x2="480" y2="270" stroke="#2c5282" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="440" y="265" font-family="Arial" font-size="10">*</text>
+  <text x="465" y="265" font-family="Arial" font-size="10">*</text>
+
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2c5282"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="500" y="30" text-anchor="middle" font-family="Arial" font-size="16" font-weight="bold">Cricket Tournament Management System - Class Diagram</text>
+</svg>
