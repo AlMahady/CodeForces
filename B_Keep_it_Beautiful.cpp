@@ -6,10 +6,20 @@ using namespace std;
 #define nl endl
 
 void solve(){
-    ll a,b;
-    cin>>a>>b;
-    ll x= ((a^(a&b))+(b^(a&b)));
-    cout<<x<<nl;
+    ll q;
+    cin>>q;
+    vector<ll>v(q);
+    for(ll &i:v)cin>>i;
+
+    string s;
+    if(is_sorted(v.begin(),v.end())){
+        for(int i=0;i<v.size();i++){
+            s.push_back('1');
+        }
+    }
+    else(
+        
+    )
 }
 
 int main(){

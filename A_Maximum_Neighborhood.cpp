@@ -6,10 +6,12 @@ using namespace std;
 #define nl endl
 
 void solve(){
-    ll a,b;
-    cin>>a>>b;
-    ll x= ((a^(a&b))+(b^(a&b)));
-    cout<<x<<nl;
+    ll n;
+    cin>>n;
+    if(n==1)cout<<1<<nl;
+    else if(n==2)cout<<9<<nl;
+    else if (n>2 && n<5) cout<<(n*n)+((n*n)-1)+((n*n)-2)+((n*n-n)-1)<<nl;
+    else cout<<((5*(n*n))-(5*n)-5)<<nl;
 }
 
 int main(){
@@ -21,4 +23,4 @@ int main(){
         solve();
     }
     return 0;
-}
+} 

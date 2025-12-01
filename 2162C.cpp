@@ -6,10 +6,7 @@ using namespace std;
 #define nl endl
 
 void solve(){
-    ll a,b;
-    cin>>a>>b;
-    ll x= ((a^(a&b))+(b^(a&b)));
-    cout<<x<<nl;
+    
 }
 
 int main(){
